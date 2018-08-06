@@ -16,227 +16,83 @@
 <body onload="PR.prettyPrint()">
 
     <!-- NAVIGATION   -->
-    <header class="bg-dark fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Categorie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Posty</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top py-3 main-nav">
+        <div class="container">
+            <a href="blog.html" class="navbar-brand">
+                <img src="" width="50" height="50" alt="">
+                <h3 class="d-inlind align-middle">HOME</h3>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="post1.html" class="nav-link">Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#authors" class="nav-link">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
+          
 
     <!-- Content -->
-    <div class="row" style="margin-top: 55px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+               
+            </div>
 
-        <!-- Lewa strona -->
-        <div class="col-md-2">
-            <div class="container ml-5">
-                <div class="card my-3">
-                    <h5 class="card-header">Categories</h5>
-                    <div class="card-body">
+            <!-- Post Content -->
+            <div class="col-md-8">
+                <section class="py-2">
+                    <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-12">
-                                <ul class="list-unstyled mb-0">
-                                    <li>
-                                        <a href="#">Programowanie C#</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bazy Danych</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bootstrap 4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Forex</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Programowanie C#</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bazy Danych</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Bootstrap 4</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Forex</a>
-                                    </li>
-
-                                </ul>
+                            <div class="col-md-3">
+                                    <a href="https://source.unsplash.com/random/300x150" data-toggle="lightbox" data-gallery="img-gallery" data-hight="150"  data-width="300">
+                                    <img src="https://source.unsplash.com/random/300x150" alt="" class="img-fluid rounded">
+                                </a>
+                                
                             </div>
+
+                            <div class="col-md-9">
+                                <a class="post-link" href="post1.html">
+                                    <h3 class="post-title">Programowanie 2</h3>
+                                    <h4 class="post-subtite">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aperiam voluptate inventore dignissimos placeat ad quis
+                                        deleniti perspiciatis eos aliquid.
+                                    </h4>
+                                   
+                                </a>
+                                <p class="post-meta">Kategoria: 
+                                        <a href="#">Programowanie C#</a>
+                                        on 08.08.2018
+                                    </p>
+                            </div>
+
                         </div>
                     </div>
-                </div>
+                    <hr>
+                </section>
 
+                
+               
+            </div>
+
+
+            <div class="col-md-2">
+                <h2></h2>
             </div>
         </div>
-
-        <!-- Środek strony -->
-        <div class="col-md-8">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="mt-4">C# Proste Programowanie</h1>
-                        <hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <p class="lead"> Katgoria:
-                                    <a href="#">Programowanie C#</a>
-                                </p>
-                            </div>
-                            <div class="row-md-6 ">
-                                <p style="text-align: right">Posted on January 1, 2018 at 12:00 PM</p>
-                            </div>
-                        </div>
-
-                        <a href="https://source.unsplash.com/random/1200x300" data-toggle="lightbox" data-gallery="img-gallery" data-hight="300"
-                            data-width="900">
-                            <img src="https://source.unsplash.com/random/1200x300" alt="" class="img-fluid rounded">
-                        </a>
-                        <hr>
-
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam
-                            sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum
-                            minus inventore?</p>
-
-                        <hr>
-                        <h4>Code</h2>
-                            <p>This is the
-                                <code>Panel</code> constructor:</p>
-                            <pre><code>function Panel(element, canClose, closeHandler) {
-                              this.element = element;
-                              this.canClose = canClose;
-                              this.closeHandler = function () { if (closeHandler) closeHandler() };
-                            }</code></pre>
-
-                            <xmp> NNNNNNNNNNNNNN
-                                <input placeholder='write something' value='test'>
-                            </xmp>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis
-                                unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat
-                                perspiciatis. Enim, iure!
-                            </p>
-
-
-
-                            <blockquote class="blockquote">
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer class="blockquote-footer">Someone famous in
-                                    <cite title="Source Title">Source Title</cite>
-                                </footer>
-                            </blockquote>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut
-                                quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo
-                                voluptatem obcaecati?
-                            </p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo,
-                                aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat
-                                numquam recusandae? Qui, necessitatibus, est!</p>
-
-                            <hr>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis
-                                unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat
-                                perspiciatis. Enim, iure!
-                            </p>
-
-                            <blockquote class="blockquote">
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer class="blockquote-footer">Someone famous in
-                                    <cite title="Source Title">Source Title</cite>
-                                </footer>
-                            </blockquote>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut
-                                quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo
-                                voluptatem obcaecati?
-                            </p>
-
-                            <hr>
-                            <div class="code">
-                                <span class="Statement">if</span>&nbsp;(czykasowacekran)<br />
-                                {<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;txtWynik.Text&nbsp;=&nbsp;<span class="String">""</span>;<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;czykasowacekran&nbsp;=&nbsp;<span class="Keyword">false</span>;<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;znak&nbsp;=&nbsp;PLUS;<br />
-                                }
-                                </div>
-
-                          <div class="code">
-                            <span class="Statement">if</span>&nbsp;(czykasowacekran)<br />
-                            {<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;txtWynik.Text&nbsp;=&nbsp;<span class="String">""</span>;<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;czykasowacekran&nbsp;=&nbsp;<span class="Keyword">false</span>;<br />
-                            &nbsp;&nbsp;&nbsp;&nbsp;znak&nbsp;=&nbsp;PLUS;<br />
-                            }
-                            </div>                            
-                                      
-                            </pre>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo,
-                                aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat
-                                numquam recusandae? Qui, necessitatibus, est!</p>
-
-                            <hr>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis
-                                unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat
-                                perspiciatis. Enim, iure!
-                            </p>
-
-                            <blockquote class="blockquote">
-                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                                <footer class="blockquote-footer">Someone famous in
-                                    <cite title="Source Title">Source Title</cite>
-                                </footer>
-                            </blockquote>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut
-                                quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo
-                                voluptatem obcaecati?
-                            </p>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo,
-                                aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat
-                                numquam recusandae? Qui, necessitatibus, est!</p>
-
-                            <hr>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Prawa Strona
-        <div class="col md-2">
-             <div class="card mt-4 mr-5">
-                <h5 class="card-header">Więcej</h5>
-                <div class="card-body">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Szukaj..">
-                        <span class="input-grpup-btn">
-                            <button class="btn btn-secondary" type="button">Go</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 
 
