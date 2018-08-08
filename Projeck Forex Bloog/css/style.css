@@ -3,7 +3,7 @@ body {
   
   .navbar {
     box-shadow: 2px 4px 5px #3292a6;
-    opacity: 0.8;
+    opacity: 0.5;
     background: #fff; 
 }
     .navbar .nav-item {
@@ -11,51 +11,42 @@ body {
       padding-right: 1.5rem; 
     }
   
-    /* section p {
-        margin-top: 15px;
-        margin-bottom: 15px; 
-    } */
-
-    .post-link{
-        direction: none;
+    .post a{
+        text-decoration: none;
+        color: #444666;
     }
-
-    .post-link:hover{
-        text-decoration: #3292a6;
+     .post:hover .post-link{
+        text-decoration: none;
         color: #3292a6;
     }
 
-.post-title{
+     .post-meta{
+         margin-top: 40px;
+     }
+
+    .post-meta a{
+       text-decoration: none;
+        color: gray;
+    }
+
+.post-title {
     font-size: 40px;
     font-weight: 700;
     font-family: 'Open Sans','Helvetica Neue', 'Helvetica,Arial,sans-serif';
-    text-decoration: none;
-
-    color: #868e96;
-}
-
-.post-title a {
-    text-decoration: none;
-}
-
-.post-preview > a > .post-title {
-    font-size: 36px;
 }
 
 .post-subtite {
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 700;
     font-family: 'Open Sans','Helvetica Neue', 'Helvetica,Arial,sans-serif';
-    margin: 0 0 10px;
-    color: #868e96;
 }
 
-.post-preview > .post-meta {
-
-    font-size: 18px;
-    font-style: italic;
-    margin-top: 0;
-    color: #868e96;
-}
+.hr {
+    box-shadow: 1px 1px 2px #3292a6;
+    opacity: 0.95;
+    background: #fff;
+    margin-top: -9px;
+    }
 
 pre {
     display: block;
