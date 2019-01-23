@@ -23,7 +23,7 @@ body{
 
 #showcase1{
     position: relative;
-    background: url(../img/wykonczenia.jpg);
+    background: url('../images/wykonczenia.jpg');
     min-height: 360px;
 
     .primary-overlay1{
@@ -38,7 +38,7 @@ body{
 
 #showcase2{
     position: relative;
-    background: url(../img/automatyka.jpg);
+    background: url('../images/automatyka.jpg');
     min-height: 360px;
     
     .primary-overlay2{
@@ -55,7 +55,7 @@ body{
 #home-heading{
     position:  relative;
     min-height: 200px;
-    background: url('../img/img3.jpg');
+    background: url('../images/img3.jpg');
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
@@ -71,14 +71,18 @@ body{
     background: rgba(0, 0, 0, 0.7);
 }
 
-// #offer{
-   
-//     background: url('../img/wykończenia/Img1.jpg');
-    
-//     background: cover;
-//     background-attachment: fixed;
-//     min-height: 450px;
-// }
+
+  
+     #gallery img{
+      transition: 1s;
+      padding: 5px;
+     
+    }
+
+  #gallery img:hover{
+    filter: grayscale(20%);
+    transform: scale(1.1);
+}
 
 
 @media (max-width: 768px) {
